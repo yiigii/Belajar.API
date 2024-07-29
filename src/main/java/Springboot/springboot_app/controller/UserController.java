@@ -6,7 +6,6 @@ import Springboot.springboot_app.model.User;
 import Springboot.springboot_app.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import Springboot.springboot_app.controller.UserController;
 
 import java.util.Optional;
 

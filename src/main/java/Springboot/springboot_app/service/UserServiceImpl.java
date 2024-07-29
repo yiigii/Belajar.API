@@ -23,26 +23,20 @@ public class UserServiceImpl implements UserService {
         daftarTamuList = new ArrayList<>();
 
         // Initialize User list
-        User user1 = new User(1, "Aigi", 23, "wahyuaigi2@gmail.com");
-        User user2 = new User(2, "Wahyu", 23, "wahyuaigi1@gmail.com");
-        User user3 = new User(3, "Way", 23, "wahyuaigi3@gmail.com");
-        User user4 = new User(4, "Ai", 23, "wahyuaigi4@gmail.com");
-        User user5 = new User(5, "Muhammad", 23, "wahyuaigi5@gmail.com");
+        User user1 = new User(1, "Aigi");
+        User user2 = new User(2, "Wahyu");
+        User user3 = new User(3, "Way");
+        User user4 = new User(4, "Ai");
+        User user5 = new User(5, "Muhammad");
         userList.addAll(Arrays.asList(user1, user2, user3, user4, user5));
 
         // Initialize Perusahaan list
-        Perusahaan perusahaan1 = new Perusahaan(1, "ruangguru", "jakbar", 500);
-        Perusahaan perusahaan2 = new Perusahaan(2, "zenius", "jakpus", 100);
-        Perusahaan perusahaan3 = new Perusahaan(3, "skolla", "jaksel", 50);
-        Perusahaan perusahaan4 = new Perusahaan(4, "nf", "depok", 300);
+        Perusahaan perusahaan1 = new Perusahaan(1, "ruangguru");
+        Perusahaan perusahaan2 = new Perusahaan(2, "zenius");
+        Perusahaan perusahaan3 = new Perusahaan(3, "skolla");
+        Perusahaan perusahaan4 = new Perusahaan(4, "nf");
         perusahaanList.addAll(Arrays.asList(perusahaan1, perusahaan2, perusahaan3, perusahaan4));
 
-        DaftarTamu daftarTamu1 = new DaftarTamu(1, "bumn", "bpk tohir");
-        DaftarTamu daftarTamu2 = new DaftarTamu(2, "pertamina", "bpk doyo");
-        DaftarTamu daftarTamu3 = new DaftarTamu(3, "tambang", "bpk aksen");
-        DaftarTamu daftarTamu4 = new DaftarTamu(4, "bimbel", "bpk kianu");
-        DaftarTamu daftarTamu5 = new DaftarTamu(5, "mobil", "bpk dion");
-        daftarTamuList.addAll(Arrays.asList(daftarTamu1, daftarTamu2, daftarTamu3, daftarTamu4, daftarTamu5));
     }
 
     @Override
