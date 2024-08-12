@@ -33,10 +33,14 @@ public class DaftarTamuServiceImpl implements DaftarTamuService {
             Springboot.springboot_app.model.DaftarTamu daftarTamu3 = new Springboot.springboot_app.model.DaftarTamu(3, perusahaan2, user3);
             Springboot.springboot_app.model.DaftarTamu daftarTamu4 = new Springboot.springboot_app.model.DaftarTamu(4, perusahaan2, user4);
 
-            System.out.println(daftarTamu1);
-            System.out.println(daftarTamu2);
-            System.out.println(daftarTamu3);
-            System.out.println(daftarTamu4);
+            daftarTamuList.add(daftarTamu1);
+            daftarTamuList.add(daftarTamu2);
+            daftarTamuList.add(daftarTamu3);
+            daftarTamuList.add(daftarTamu4);
+
+                for (DaftarTamu daftarTamu : daftarTamuList) {
+                System.out.println(daftarTamu);
+            }
 
         }
 
