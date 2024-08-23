@@ -18,7 +18,7 @@ public class DaftarTamuServiceImpl implements DaftarTamuService {
     private List<Perusahaan> perusahaanList;
     private List<DaftarTamu> daftarTamuList;
 
-    public DaftarTamuServiceImpl() {
+    public DaftarTamuServiceImpl() throws JsonProcessingException {
         userList = new ArrayList<>();
         perusahaanList = new ArrayList<>();
         daftarTamuList = new ArrayList<>();
@@ -43,15 +43,15 @@ public class DaftarTamuServiceImpl implements DaftarTamuService {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-        for (DaftarTamu daftarTamu : daftarTamuList) {
+        String listJson = objectMapper.writeValueAsString(daftarTamuList);
+        System.out.println(listJson);
             try {
-                String json = objectMapper.writeValueAsString(daftarTamu);
+                String json = objectMapper.writeValueAsString(daftarTamuList);
                 System.out.println(json);
             } catch (JsonProcessingException e) {
                 e.printStackTrace();
             }
         }
-    }
 
     @Override
     public Optional<User> getUser(Integer id) {
@@ -70,6 +70,6 @@ public class DaftarTamuServiceImpl implements DaftarTamuService {
 
     @Override
     public void setDaftarTamu(DaftarTamu daftarTamu) {
-        daftarTamuList.add(daftarTamu);
+
     }
 }

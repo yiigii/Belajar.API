@@ -68,4 +68,9 @@ public class UserServiceImpl implements UserService {
         }
         return Optional.empty();
     }
+
+    @Override
+    public Optional getDaftarTamuServiceImpl(Integer id) {
+        return Optional.empty();
+    }
 }
